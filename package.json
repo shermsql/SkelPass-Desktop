@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "Official Desktop Client for SkelVault.",
   "main": "main.js",
-  "author": "Skelvric",
+  "author": {
+    "name": "Skelvric",
+    "email": "vault@skelvric.com"
+  },
   "license": "MIT",
   "scripts": {
     "start": "electron .",

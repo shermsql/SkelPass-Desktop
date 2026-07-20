@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkelVault</title>
+  <link rel="stylesheet" href="./styles/titlebar.css">
+</head>
+
+<body>
+  <!-- Custom Title Bar -->
+  <div id="titleBar" class="light">
+    <div></div>
+    <div id="title">SkelVault</div>
+    <div id="controls">
+      <button id="button-minimum" title="Minimize">─</button>
+      <button id="button-maximum" title="Enlarge / Undo">◻</button>
+      <button id="button-close" class="close-button" title="Close">✕</button>
+    </div>
+  </div>
+  
+  <!-- Loading Spinner -->
+  <div id="loading">
+    <div style="text-align: center;">
+      <div class="spinner"></div>
+      <div id="loading-text">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <webview
+  id="webView"
+  src="https://vault.skelvric.com/auth/login"
+  partition="persist:Vault"
+  allowpopups="false" >
+  </webview>
+
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

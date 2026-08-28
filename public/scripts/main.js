@@ -56,30 +56,6 @@ function showLoading() {
 }
 
 /**
- * Detect Theme In WebView And Update Title Bar
- */
-function updateTitlebarTheme() {
-  webView
-    .executeJavaScript(
-      `
-        (function() {
-          const html = document.documentElement;
-          const isDark = html.classList.contains('dark') || 
-            window.matchMedia('(prefers-color-scheme: dark)').matches;
-          return html.classList.contains('light') ? 'light' : (isDark ? 'dark' : 'light');
-        })();
-      `
-    )
-    .then((theme) => {
-      titleBar.className = theme; // 'Light' & 'Dark'
-    })
-    .catch(() => {
-      // Assume Dark Mode On Error
-      titleBar.className = 'dark';
-    });
-}
-
-/**
  * WebView Event Listeners
  */
 
@@ -119,8 +95,3 @@ webView.addEventListener('did-finish-load', () => {
 loadTimeout = setTimeout(() => {
   hideLoading();
 }, 8000);
-
-/**
- * Periodic Theme Detection (Check For In-Page Theme Changes)
- */
-setInterval(updateTitlebarTheme, 1000);

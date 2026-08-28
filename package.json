@@ -1,11 +1,11 @@
 {
-  "name": "skelvault-desktop",
-  "version": "0.1.0",
-  "description": "Official Desktop Client for SkelVault.",
+  "name": "skelpass-desktop",
+  "version": "0.2.0",
+  "description": "Official Desktop Client for SkelPass.",
   "main": "main.js",
   "author": {
     "name": "Skelvric",
-    "email": "vault@skelvric.com"
+    "email": "support@skelvric.com"
   },
   "license": "MIT",
   "scripts": {
@@ -18,11 +18,11 @@
   },
   "devDependencies": {
     "electron": "^43.1.1",
-    "electron-builder": "^24.9.1"
+    "electron-builder": "^26.15.3"
   },
   "build": {
-    "appId": "com.skelvric.skelvault",
-    "productName": "SkelVault",
+    "appId": "com.skelvric.skelpass",
+    "productName": "SkelPass",
     "directories": {
       "buildResources": "assets"
     },

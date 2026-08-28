@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkelVault</title>
+  <title>SkelPass</title>
   <link rel="stylesheet" href="./styles/titlebar.css">
 </head>
 
 <body>
   <!-- Custom Title Bar -->
-  <div id="titleBar" class="light">
+  <div id="titleBar" class="default">
     <div></div>
-    <div id="title">SkelVault</div>
+    <div id="title">SkelPass Desktop</div>
     <div id="controls">
       <button id="button-minimum" title="Minimize">─</button>
       <button id="button-maximum" title="Enlarge / Undo">◻</button>
@@ -31,7 +31,7 @@
   <!-- Content -->
   <webview
   id="webView"
-  src="https://vault.skelvric.com/auth/login"
+  src="https://pass.skelvric.com/login"
   partition="persist:Vault"
   allowpopups="false" >
   </webview>

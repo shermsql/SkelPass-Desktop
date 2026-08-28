@@ -1,11 +1,11 @@
-### SkelVault Desktop 🔒
+### SkelPass Desktop 🔒
 
-Official Desktop Client for SkelVault.
+Official Desktop Client for SkelPass.
 
 #### 📋 Folder Structure
 
 ```
-skelvault-desktop/
+skelpass-desktop/
 ├── main.js                      # App LifeCycle Entry Point
 ├── package.json                 # Dependencies And Scripts
 ├── README.md                    # Documentation
@@ -74,15 +74,9 @@ npm run dev
 - **styles/titlebar.css** - TitleBar And UI Styles
 - **scripts/main.js** - Loading, Theme, UI Interaction
 
-#### 🎨 Theme Support
-
-The App Automatically Detects The WebView Theme:
-- **Dark Mode** - Dark TitleBar
-- **Light Mode** - Light TitleBar
-
 #### 🔧 Development
 
-#### To Add New Features:
+##### To Add New Features:
 
 1. Need IPC Handler? → Add To `src/main/ipc.js`
 2. Need Preload API? → Add To `src/preload/preload.js`
@@ -101,8 +95,8 @@ Add To `package.json`:
 ```json
 {
   "build": {
-    "appId": "com.skelvric.skelvault",
-    "productName": "SkelVault",
+    "appId": "com.skelvric.skelpass",
+    "productName": "SkelPass",
     "directories": {
       "buildResources": "assets"
     },
@@ -126,19 +120,15 @@ To Customize The Icon:
 
 **Webview Appears Empty?**
 - Check Your Internet Connection
-- Verify `https://vault.skelvric.com` Is Accessible
+- Verify `https://pass.skelvric.com` Is Accessible
 
 **Loading Spinner Doesn't Stop?**
 - There's An 8-Second Timeout That Will Force Close The Spinner
 - May Be A Network Speed Issue
 
-**Theme Not Changing?**
-- Periodic Check Runs Every 1 Second
-- JavaScript Must Be Active In WebView
-
 #### 📄 License
 
-MIT
+MIT — See [LICENSE](./LICENSE.txt).
 
 #### ❔ Questions?
 

@@ -1,4 +1,5 @@
 const { app } = require('electron');
+
 const { createWindow } = require('./src/main/window');
 const { setupWebviewSecurity } = require('./src/main/security');
 

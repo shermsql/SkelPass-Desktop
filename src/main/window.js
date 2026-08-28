@@ -1,4 +1,5 @@
 const { BrowserWindow, Menu } = require('electron');
+
 const { setupIpcHandlers } = require('./ipc');
 const { setupMainWindowSecurity } = require('./security');
 

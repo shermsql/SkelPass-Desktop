@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./Preview.png" alt="SkelPass Desktop Preview" width="800">
+</p>
+
 ### SkelPass Desktop 🔒
 
 Official Desktop Client for SkelPass.
